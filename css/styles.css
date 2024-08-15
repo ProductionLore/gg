@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #f5f5f5;
+    background-color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.navbar-brand .logo {
+    width: 80px;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin: 0 10px;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
+.header-text {
+    text-align: center;
+    padding: 20px;
+}
+
+.header-text h1 {
+    font-size: 2.5em;
+}
+
+.header-text p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000; /* Черный фон кнопок */
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #fff; /* Белая обводка */
+    position: relative; /* Необходимо для анимации */
+    overflow: hidden; /* Обрезает содержимое, выходящее за пределы кнопки */
+}
+
+.btn-support {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Синий фон кнопки */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn-support:hover {
+    background-color: #0056b3; /* Темнее синий при наведении */
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+    z-index: 0;
+}
+
+.btn:hover::before {
+    width: 0;
+    height: 0;
+}
+
+.btn span {
+    position: relative;
+    z-index: 1;
+}
+
+#tech {
+    text-align: center; /* Центрирование текста по горизонтали */
+    padding: 20px 0; /* Отступы сверху и снизу для секции */
+    background: rgba(255, 255, 255, 0.2); /* Легкий фон для секции (опционально) */
+}
+
+.tech-description {
+    font-weight: bold; /* Жирный шрифт */
+    font-size: 18px; /* Размер шрифта */
+    color: #333; /* Цвет текста */
+    margin: 0; /* Убираем отступы вокруг текста */
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.feature {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.feature img {
+    width: 80px;
+    height: auto;
+}
+
+.ui-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ui-images img {
+    width: 45%;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links i {
+    font-size: 1.5em;
+}
+
+/* Стили для секции с анимированными квадратами */
+.footer-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.service-box {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 
